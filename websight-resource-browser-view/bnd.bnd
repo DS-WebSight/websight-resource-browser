@@ -1,0 +1,3 @@
+Bundle-Name: WebSight Resource Browser View
+Bundle-License: GNU AGPLv3
+Sling-Bundle-Resources: /apps/websight-resource-browser;propsJSON:=json

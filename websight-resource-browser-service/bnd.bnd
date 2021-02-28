@@ -1,0 +1,5 @@
+Bundle-Name: WebSight Resource Browser Service
+Bundle-License: GNU AGPLv3
+Sling-Model-Packages: pl.ds.websight.resourcebrowser.rest
+Sling-Bundle-Resources: /apps/websight-resource-browser-service/docs
+WebSight-Swagger-Index: /apps/websight-resource-browser-service/docs/api.html

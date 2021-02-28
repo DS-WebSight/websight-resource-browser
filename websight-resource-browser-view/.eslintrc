@@ -1,0 +1,51 @@
+// Find all rules in: https://eslint.org/docs/rules/ and https://www.npmjs.com/package/eslint-plugin-react
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+        "array-bracket-newline": ["error", "consistent"],
+        "array-bracket-spacing": ["error", "never"],
+        "arrow-spacing": "error",
+        "block-spacing": "error",
+        "brace-style": "error",
+        "comma-dangle": ["error", "never"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "eqeqeq": ["error", "smart"],
+        "func-call-spacing": ["error", "never"],
+        "indent": ["error", 4],
+        "no-duplicate-imports": "error",
+        "no-console": ["warn", {"allow": ["warn", "error"]}],
+        "no-extra-bind": "error",
+        "no-self-compare": "error",
+        "no-shadow": "error",
+        "no-useless-constructor": "error",
+        "no-var": "error",
+        "object-curly-spacing": ["error", "always"],
+        "prefer-arrow-callback": "error",
+        "prefer-const": "error",
+        "sort-imports": ["error", { "ignoreMemberSort": false, "ignoreDeclarationSort": true }],
+        "quotes": ["error", "single"],
+        "react/jsx-key": "error",
+        "react/no-access-state-in-setstate": "error",
+        "react/prop-types": "off"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "16"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "lint": "eslint --ignore-path .eslintignore .",
+    "lintfix": "eslint --ignore-path .eslintignore --fix .",
+    "babel": "cross-env BABEL_ENV='production' && babel src/main/webapp --config-file ./babel/.babelrc.js -d target/dist --copy-files",
+    "localserver": "cross-env BABEL_ENV='development' && concurrently --kill-others \"babel src/main/webapp/ --config-file ./babel/.babelrc.js -d target/dist --copy-files --watch\" \"serve target/dist -p 8081\""
+  },
+  "dependencies": {
+    "react": "npm:@pika/react@16.13.1",
+    "react-dom": "npm:@pika/react-dom@16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.7.7",
+    "@babel/core": "7.7.7",
+    "@babel/preset-react": "7.8.3",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "concurrently": "5.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.0.0",
+    "eslint-plugin-react": "^7.20.0",
+    "serve": "11.3.0"
+  }
+}

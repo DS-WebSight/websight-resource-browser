@@ -1,0 +1,21 @@
+{
+  "rootDir": "/apps/",
+  "aliases": {
+    "^@atlaskit/(.*)":  "websight-atlaskit-esm/web-resources/@atlaskit/\\1.js",
+    "react": "websight-atlaskit-esm/web-resources/react.js",
+    "react-dom": "websight-atlaskit-esm/web-resources/react-dom.js",
+    "styled-components": "websight-atlaskit-esm/web-resources/styled-components.js",
+    "react-beautiful-dnd": "websight-atlaskit-esm/web-resources/react-beautiful-dnd.js",
+    "^websight-rest-atlaskit-client(.*)": "websight-rest-atlaskit-client/web-resources/js\\1.js",
+    "^websight-admin(.*)":  "websight-admin/web-resources\\1.js",
+    "^websight-autosuggestion-esm(.*)": "websight-autosuggestion-esm/web-resources\\1.js",
+    "websight-fragments-esm": "websight-fragments-esm/web-resources/WebFragments.js"
+  },
+  "devAliases": {
+    "websight-atlaskit-esm": "http://localhost:8080/apps/websight-atlaskit-esm",
+    "websight-rest-esm-client": "http://localhost:8080/apps/websight-rest-esm-client",
+    "websight-admin": "http://localhost:8080/apps/websight-admin",
+    "websight-rest-atlaskit-client": "http://localhost:8080/apps/websight-rest-atlaskit-client",
+    "websight-autosuggestion-esm": "http://localhost:8080/apps/websight-autosuggestion-esm"
+  }
+}
